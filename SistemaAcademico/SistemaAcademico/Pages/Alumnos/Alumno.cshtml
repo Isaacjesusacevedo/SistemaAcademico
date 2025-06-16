@@ -1,0 +1,41 @@
+﻿@page
+@model SistemaAcademico.Pages.Alumnos.AlumnosModel
+@{
+}
+<a asp-page="CreateAlumno" class="btn btn-success mb-3">Agregar alumno</a>
+@if (Model.listaAlumnosMotrar.Count == 0)
+{
+	<p>No hay alumnos cargados</p>
+}
+else
+{
+	<table class="table">
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Nombre</th>
+				<th>Apellido</th>
+				<th>DNI</th>
+				<th>Email</th>
+				<th>Fecha de nacimiento</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var alumno in Model.listaAlumnosMotrar)
+			{
+				<tr>
+					<td>@alumno.Id</td>
+					<td>@alumno.Nombre</td>
+					<td>@alumno.Apellido</td>
+					<td>@alumno.Dni</td>
+					<td>@alumno.Email</td>
+					<td>@alumno.FechaNacimiento</td>
+					<td>
+						<a asp-page="EditAlumno" asp-route-id="@alumno.Id" class="btn btn-warning btn-sm">Editar</a>
+						<a asp-page="EliminarAlumno" asp-route-id="@alumno.Id" class="btn btn-warning btn-sm">Eliminar</a>
+					</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+}

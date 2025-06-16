@@ -1,0 +1,44 @@
+﻿@page
+@model SistemaAcademico.Pages.Carreras.CarrerasModel
+@{
+}
+
+<a asp-page="CreateCarrera" class="btn btn-success mb-3">Agregar carrera</a>
+
+@if (Model.ListaMostrarCarrera.Count == 0)
+{
+    <p> No hay carreras cargadas </p>
+}
+else
+{
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Modalidad</th>
+                <th>Duración (años)</th>
+                <th>Titulo otorgado</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var carrera in Model.ListaMostrarCarrera)
+            {
+                <tr>
+                    <td>@carrera.Id</td>
+                    <td>@carrera.Nombre</td>
+                    <td>@carrera.Modalidad</td>
+                    <td>@carrera.DuracionAnios</td>
+                    <td>@carrera.TituloOtorgado</td>
+                    <td>
+                        <a asp-page="EditCarrera" asp-route-id="@carrera.Id" class="btn btn-warning btn-sm">Editar</a>
+                        <a asp-page="EliminarCarrera" asp-route-id="@carrera.Id" class="btn btn-warning btn-sm">Eliminar</a>
+                    </td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+}

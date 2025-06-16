@@ -1,0 +1,23 @@
+[
+  {
+    "Id": 1,
+    "Nombre": "Analista de datos",
+    "DuracionAnios": 5,
+    "TituloOtorgado": "Ingeniero",
+    "Modalidad": "Presencial"
+  },
+  {
+    "Id": 2,
+    "Nombre": "asdasdasd",
+    "DuracionAnios": 5,
+    "TituloOtorgado": "asdasdasd",
+    "Modalidad": "Virtual"
+  },
+  {
+    "Id": 3,
+    "Nombre": "asdasdasd",
+    "DuracionAnios": 2,
+    "TituloOtorgado": "ffffffffffff",
+    "Modalidad": "Virtual"
+  }
+]

@@ -1,0 +1,41 @@
+﻿@page
+@model SistemaAcademico.Pages.Alumnos.EditAlumnoModel
+@{
+}
+<form method="post">
+
+	<input type="hidden" asp-for="Alumnos.Id">
+
+	<div class="form-group">
+		<label asp-for="Alumnos.Nombre"></label>
+		<input asp-for="Alumnos.Nombre" class="form-control" />
+		<span asp-validation-for="Alumnos.Nombre" class="text-danger"></span>
+	</div>
+
+	<div class="form-group">
+		<label asp-for="Alumnos.Apellido"></label>
+		<input asp-for="Alumnos.Apellido" class="form-control" />
+		<span asp-validation-for="Alumnos.Apellido" class="text-danger"></span>
+	</div>
+
+	<div class="form-group">
+		<label asp-for="Alumnos.Dni"></label>
+		<input type="number" asp-for="Alumnos.Dni" class="form-control" />
+		<span asp-validation-for="Alumnos.Dni" class="text-danger"></span>
+	</div>
+
+	<div class="form-group">
+		<label asp-for="Alumnos.Email"></label>
+		<input type="email" asp-for="Alumnos.Email" class="form-control" />
+		<span asp-validation-for="Alumnos.Email" class="text-danger"></span>
+	</div>
+
+	<div class="form-group">
+		<label asp-for="Alumnos.FechaNacimiento"></label>
+		<input type="date" asp-for="Alumnos.FechaNacimiento" class="form-control" />
+		<span asp-validation-for="Alumnos.FechaNacimiento" class="text-danger"></span>
+	</div>
+
+	<button type="submit" class="btn btn-primary">Guardar</button>
+
+</form>
