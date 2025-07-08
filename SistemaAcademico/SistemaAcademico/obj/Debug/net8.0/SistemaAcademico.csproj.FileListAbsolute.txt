@@ -28,3 +28,4 @@ C:\Users\Isa\source\repos\SistemaAcademico\SistemaAcademico\obj\Debug\net8.0\ref
 C:\Users\Isa\source\repos\SistemaAcademico\SistemaAcademico\obj\Debug\net8.0\SistemaAcademico.pdb
 C:\Users\Isa\source\repos\SistemaAcademico\SistemaAcademico\obj\Debug\net8.0\SistemaAcademico.genruntimeconfig.cache
 C:\Users\Isa\source\repos\SistemaAcademico\SistemaAcademico\obj\Debug\net8.0\ref\SistemaAcademico.dll
+C:\Users\Isa\source\repos\SistemaAcademico\SistemaAcademico\obj\Debug\net8.0\SistemaAcademico.sourcelink.json

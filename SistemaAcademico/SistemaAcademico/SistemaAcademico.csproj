@@ -6,4 +6,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Remove="Data\Alumnos.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="Data\Alumnos.json" />
+  </ItemGroup>
+
 </Project>
